@@ -25,6 +25,10 @@ Used to asynchronously make requests to the Hacker News API.
 * git
 
 ```bash
+git clone https://github.com/felipevargas-bz/hacker-news-Topstories.git && cd hacker-news-Topstories
+```
+
+```bash
 docker-compose -f docker/docker-compose.yml up --build -d
 ```
 
