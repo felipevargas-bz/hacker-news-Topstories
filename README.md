@@ -30,7 +30,7 @@ docker-compose -f docker/docker-compose.yml up --build -d
 
 ## Usage
 
-To query the news, you must first run the project or use the version deployed in aws, which is at the following [URL](http://pdf-extraction.felipevargas.tech:8088/stories/?i=5&n=30).
+To query the news, you must first run the project or use the version deployed in aws, which is at the following [URL](http://pdf-extraction.felipevargas.tech:8088/stories/?i=5&n=30). the main path is `/stories/`
 
 There are two ways to use the app:
 * You can send the query indicating two query parameters in the path as follows.
@@ -39,5 +39,13 @@ There are two ways to use the app:
 ```
 http://pdf-extraction.felipevargas.tech:8088/stories/?i=0&n=30
 ```
+this query will bring us the first 30 news items on the list.
 
+* you can send the query to fetch all the news from the list as follows.
+```
+http://pdf-extraction.felipevargas.tech:8088/stories/
+```
+the result will be all the news in the list.
 
+### Authors :black_nib:
+* __Felipe Vargas, felipevargas.bz@gmail.com__
