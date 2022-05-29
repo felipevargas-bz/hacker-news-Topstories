@@ -34,8 +34,8 @@ To query the news, you must first run the project or use the version deployed in
 
 There are two ways to use the app:
 * You can send the query indicating two query parameters in the path as follows.
--- i: is the index for the list of consulted news and indicates from which position in the news we are going to start counting.
--- n: is the maximum number of news that will be returned by the application.
+  - i: is the index for the list of consulted news and indicates from which position in the news we are going to start counting.
+  - n: is the maximum number of news that will be returned by the application.
 ```
 http://pdf-extraction.felipevargas.tech:8088/stories/?i=0&n=30
 ```
