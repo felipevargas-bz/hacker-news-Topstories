@@ -1,0 +1,32 @@
+version: "3.2"
+
+services:
+  topstories-service:
+    image: topstories-service
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: topstories-service
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - ../:/usr/src/app/
+    ports:
+      - 8081:8000
+    environment:
+      - REDIS_HOST=redis_db
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+    networks:
+      - topstories-network
+
+  redis:
+    image: redis:alpine
+    container_name: redis_db
+    restart: always
+    networks:
+      - topstories-network
+
+networks:
+  topstories-network:
+    driver: bridge
