@@ -32,4 +32,12 @@ docker-compose -f docker/docker-compose.yml up --build -d
 
 To query the news, you must first run the project or use the version deployed in aws, which is at the following [URL](http://pdf-extraction.felipevargas.tech:8088/stories/?i=5&n=30).
 
+There are two ways to use the app:
+* You can send the query indicating two query parameters in the path as follows.
+- i: is the index for the list of consulted news and indicates from which position in the news we are going to start counting.
+- n: is the maximum number of news that will be returned by the application.
+```
+http://pdf-extraction.felipevargas.tech:8088/stories/?i=0&n=30
+```
+
 
