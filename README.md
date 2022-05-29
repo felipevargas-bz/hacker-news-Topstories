@@ -30,6 +30,6 @@ docker-compose -f docker/docker-compose.yml up --build -d
 
 ## Usage
 
-To query the news, you must first run the project or use the version deployed in aws, which is at the following URL:
-URL: http://pdf-extraction.felipevargas.tech:8088/stories/?i=5&n=30
+To query the news, you must first run the project or use the version deployed in aws, which is at the following [URL](http://pdf-extraction.felipevargas.tech:8088/stories/?i=5&n=30).
+
 
