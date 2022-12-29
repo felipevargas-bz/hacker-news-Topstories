@@ -56,7 +56,8 @@ def stories(request):
             log.info('Saving stories in redis cache')
             save_redis_cache(items=stories)
 
-        return JsonResponse(stories, safe=False)
+        # return JsonResponse(stories, safe=False)
+        return JsonResponse({'mensaje': 'Vamos a hueler'}, safe=False)
 
     except Exception as e:
         log.error(e)
